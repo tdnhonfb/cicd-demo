@@ -1,8 +1,8 @@
 pipeline {
     agent none
-     environment {
+  //   environment {
     // environment variable
-  }
+ // }
     stages {
         stage('Build') {
             steps {
