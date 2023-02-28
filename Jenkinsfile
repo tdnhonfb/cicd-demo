@@ -1,6 +1,6 @@
 pipeline {
     agent {
-   label 'deploy'+new Random().nextInt(2)+'||master'
+   label 'main'
 }
   //   environment {
     // environment variable
