@@ -1,25 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+const util = require('util')
+const {add,minus} = require('./functions')
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reloads.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default App;
+console.log('hello world');
+console.log('Today is a beautiful day.')
+var a = 2
+var b = 9
+console.log(util.format("Add: %d+%d=%d", a, b, add(a,b)))
+console.log(util.format("Minus: %d-%d=%d", a, b, minus(a,b)))

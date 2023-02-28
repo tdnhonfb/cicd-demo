@@ -1,10 +1,8 @@
 /** @type {import('jest').Config} */
 const config = {
-    collectCoverageFrom: [
-      '**/*.{js,jsx}',
-      '!**/node_modules/**',
-      '!**/vendor/**',
-    ],
+    transform: {
+      '\\.[jt]sx?$': 'babel-jest',
+    },
   };
   
   module.exports = config;
