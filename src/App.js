@@ -2,7 +2,7 @@ function App() {
   
   return (
         <p>
-          Edit <code>src/App.js</code> and save to reloadss.
+          Edit <code>src/App.js</code> and save to reloads.
         </p>
       
   );
