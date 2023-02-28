@@ -1,7 +1,7 @@
 const util = require('util')
 const {add,minus} = require('./functions')
 
-console.log('hello world');
+console.log('hello worlds');
 console.log('Today is a beautiful day.')
 var a = 2
 var b = 9
