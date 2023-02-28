@@ -4,12 +4,12 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        sh 'npm run test'
+        bat 'npm run test'
       }
     }
     stage('Build') {
       steps {
-        sh 'npm run build'
+        bat 'npm run build'
       }
     }
     // stage('Push to Heroku registry') {
