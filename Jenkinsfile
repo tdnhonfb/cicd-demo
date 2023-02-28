@@ -9,7 +9,8 @@ pipeline {
     }
     stage('Test') {
       steps {
-        bat ' npm test -- App.test.js'
+        bat 'npm test -- App.test.js'
+        bat 'a'
       }
     }
     stage('Build') {
