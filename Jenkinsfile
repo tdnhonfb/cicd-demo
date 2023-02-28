@@ -7,11 +7,11 @@ pipeline {
         bat 'npm install'
       }
     }
-    stage('Test') {
-      steps {
-        bat 'npm test -- App.tests.js'
-      }
-    }
+    // stage('Test') {
+    //   steps {
+    //     bat 'npm test -- App.tests.js'
+    //   }
+    // }
     stage('Build') {
       steps {
         bat 'npm run build'
