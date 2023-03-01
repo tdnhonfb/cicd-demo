@@ -22,6 +22,23 @@ pipeline {
         bat 'npm run build'
       }
     }
+    stage("Delete"){
+      steps {
+        folderOperations([folderDeleteOperation(
+        excludes: '',
+        folderPath: "C:\\xampp\\htdocs"
+        )])
+      }
+    }
+    stage("Copy"){
+      steps {
+        folderOperations([folderCopyOperation(
+        sourceFolderPath : "./build", 
+        excludes: '',
+        destinationFolderPath: "C:\\xampp\\htdocs"
+        )])
+      }
+}
     // stage('Push to Heroku registry') {
     //   steps {
     //     sh '''
