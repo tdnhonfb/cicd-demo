@@ -1,9 +1,17 @@
-const util = require('util')
-const {add,minus} = require('./functions')
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
-console.log('hello world');
-console.log('Today is a beautiful day.')
-var a = 2
-var b = 9
-console.log(util.format("Add: %d+%d=%d", a, b, add(a,b)))
-console.log(util.format("Minus: %d-%d=%d", a, b, minus(a,b)))
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+      <h1> Hello ReactJs! </h1>
+      <a className="App-link" href="https://www.youtube.com/channel/UC64HFdJWvwuNt2ruywWvF-w">Youtube Channel - Software Engineer </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
