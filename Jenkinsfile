@@ -7,6 +7,11 @@ pipeline {
         bat 'npm install'
       }
     }
+     stage('Coding Convention') {
+      steps {
+        bat 'npx eslint src'
+      }
+    }
       stage('Test') {
       steps {
         bat 'npm test'
